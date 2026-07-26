@@ -203,33 +203,125 @@
     $("#education-timeline").innerHTML = html;
   }
 
-  function renderExperienceTimeline() {
-    const html = PORTFOLIO_DATA.experience
+  function renderExperienceDetails(details) {
+    return details
       .map(
-        (exp) => `
-      <div class="timeline-item reveal">
-        <span class="timeline-dot"><svg class="icon"><use href="#icon-briefcase"/></svg></span>
-        <div class="timeline-card">
-          <span class="timeline-tag">${exp.type}</span>
-          <div class="timeline-head">
-            <h4>${exp.position}</h4>
-            <span class="timeline-period">${exp.period}</span>
-          </div>
-          <div class="timeline-org">${exp.organisation}</div>
-          <ul class="timeline-list" style="margin-top:12px;">
-            ${exp.responsibilities.map((r) => `<li><svg class="icon"><use href="#icon-check"/></svg><span>${r}</span></li>`).join("")}
-          </ul>
-          ${
-            exp.achievements && exp.achievements.length
-              ? `<div class="timeline-meta" style="margin-top:12px; font-weight:600; color:var(--text);">Key achievement</div>
-                 <ul class="timeline-list">${exp.achievements.map((a) => `<li><svg class="icon"><use href="#icon-award"/></svg><span>${a}</span></li>`).join("")}</ul>`
-              : ""
-          }
-        </div>
-      </div>`
+        (section) => `
+          <section class="experience-detail-section">
+            <h5>${section.title}</h5>
+            ${
+              section.paragraphs && section.paragraphs.length
+                ? section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("")
+                : ""
+            }
+            ${
+              section.bullets && section.bullets.length
+                ? `<ul class="experience-detail-list">
+                    ${section.bullets
+                      .map(
+                        (bullet) =>
+                          `<li><svg class="icon"><use href="#icon-check"/></svg><span>${bullet}</span></li>`
+                      )
+                      .join("")}
+                  </ul>`
+                : ""
+            }
+          </section>`
       )
       .join("");
+  }
+
+  function renderExperienceTimeline() {
+    const html = PORTFOLIO_DATA.experience
+      .map((exp) => {
+        const summary =
+          Array.isArray(exp.summary) && exp.summary.length
+            ? exp.summary
+            : Array.isArray(exp.responsibilities)
+              ? exp.responsibilities
+              : [];
+
+        const hasDetails = Array.isArray(exp.details) && exp.details.length > 0;
+        const experienceId = exp.id || slugify(`${exp.position}-${exp.organisation}`);
+        const detailsId = `experience-details-${experienceId}`;
+
+        return `
+          <div class="timeline-item reveal">
+            <span class="timeline-dot">
+              <svg class="icon"><use href="#icon-briefcase"/></svg>
+            </span>
+
+            <article class="timeline-card experience-card">
+              <span class="timeline-tag">${exp.type}</span>
+
+              <div class="timeline-head">
+                <h4>${exp.position}</h4>
+                <span class="timeline-period">${exp.period}</span>
+              </div>
+
+              <div class="timeline-org">${exp.organisation}</div>
+
+              <div class="experience-summary">
+                ${summary.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+              </div>
+
+              ${
+                hasDetails
+                  ? `
+                    <button
+                      class="experience-see-more-btn"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="${detailsId}"
+                    >
+                      <span class="experience-see-more-label">See More</span>
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#icon-arrow-right"/>
+                      </svg>
+                    </button>
+
+                    <div
+                      class="experience-details"
+                      id="${detailsId}"
+                      aria-hidden="true"
+                    >
+                      <div class="experience-details-inner">
+                        <div class="experience-details-content">
+                          ${renderExperienceDetails(exp.details)}
+                        </div>
+                      </div>
+                    </div>
+                  `
+                  : ""
+              }
+            </article>
+          </div>`;
+      })
+      .join("");
+
     $("#experience-timeline").innerHTML = html;
+  }
+
+  function initExperienceSeeMore() {
+    const timeline = $("#experience-timeline");
+    if (!timeline) return;
+
+    timeline.addEventListener("click", (event) => {
+      const button = event.target.closest(".experience-see-more-btn");
+      if (!button || !timeline.contains(button)) return;
+
+      const detailsId = button.getAttribute("aria-controls");
+      const details = document.getElementById(detailsId);
+      if (!details) return;
+
+      const willExpand = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(willExpand));
+      details.setAttribute("aria-hidden", String(!willExpand));
+      details.classList.toggle("open", willExpand);
+
+      const label = $(".experience-see-more-label", button);
+      if (label) label.textContent = willExpand ? "Show Less" : "See More";
+    });
   }
 
   /* ------------------------------------------------------------------ *
@@ -487,6 +579,7 @@
     renderAbout();
     renderEducationTimeline();
     renderExperienceTimeline();
+    initExperienceSeeMore();
     renderSkills();
     renderProjects();
     renderAwards();

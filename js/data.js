@@ -40,43 +40,38 @@ const PORTFOLIO_DATA = {
   // REPLACE-ME: swap intro copy, image, and links with the real profile.
   profile: {
     name: "Manitha Pasandul",
-    title: "Mechanical Engineering Graduate | University of Moratuwa",
+    title: "Final-Year Mechanical Engineering Undergraduate | Aeronautical Engineering",
     tagline:
-      "Recent BSc (Hons) Mechanical Engineering graduate with hands-on experience in CAD design, CFD simulation, and manufacturing process development.",
+      "Aspiring aerospace engineer and researcher with interests in flight dynamics, aerospace propulsion, computational aerodynamics, and experimental aerospace engineering.",
     intro:
-      "Recent BSc (Hons) Mechanical Engineering graduate with hands-on experience in CAD design, CFD simulation, and manufacturing process development. This sample CV is generated for portfolio demonstration purposes.",
-    location: "Colombo, Sri Lanka (Sample)",
-    email: "manitha.pasandul@example.com",
-    phone: "+94 77 000 0000",
-    cvUrl: "assets/cv/Manitha_Pasandul_Sample_CV.pdf",
-    profileImage: "assets/images/profile-placeholder.svg",
+      "I am a final-year Mechanical Engineering undergraduate at the University of Moratuwa, specialising in Aeronautical Engineering. My work combines simulation, experimental validation, and practical engineering design across flight dynamics, propulsion, aerodynamics, and aircraft systems.",
+    location: "Sri Lanka",
+    email: "manitha.pasandul@example.com", // Replace with your current email
+    phone: "+94 77 000 0000", // Replace with your current phone number
+    cvUrl: "assets/cv/Manitha_Pasandul_CV.pdf",
+    profileImage: "assets/images/profile.jpg",
     socials: {
-      linkedin: "https://linkedin.com/in/example-profile", // REPLACE-ME
-      github: "https://github.com/example-profile", // REPLACE-ME
-      twitter: "https://twitter.com/example-profile", // REPLACE-ME
-      instagram: "https://instagram.com/example-profile", // REPLACE-ME
+      linkedin: "https://linkedin.com/in/example-profile", // Replace with your LinkedIn URL
+      github: "https://github.com/manithapasandul-wq",
+      twitter: "https://twitter.com/example-profile", // Replace or remove if unused
+      instagram: "https://instagram.com/example-profile", // Replace or remove if unused
     },
   },
 
   about: {
     paragraphs: [
-      "I am a final-year Mechanical Engineering undergraduate at the University of Moratuwa, one of Sri Lanka’s leading engineering universities, specializing in Aeronautical Engineering.",
-      "My interests lie in flight dynamics, aerospace propulsion, computational aerodynamics, and experimental aerospace engineering.",
-      "My primary research is my final-year project on fixed-wing UAV flight dynamics, which combines aerodynamic modelling, dynamic stability analysis, simulation, and flight-test data to evaluate and fine-tune UAV behaviour.",
-      "As part of this research framework, I designed, fabricated, instrumented, and flight-tested a complete fixed-wing UAV, enabling simulation results to be validated against actual flight performance.",
-      "Other major projects include propeller design and performance analysis using Blade Element Theory, analytical structural design of a sailplane wing, and FEA modelling and experimental validation of an aircraft wing structure using a dedicated test apparatus.",
-      "I also served as an aerodynamics engineer for Sri Lanka’s first Formula Student car project, leading the aerodynamic package development for the team’s second vehicle, E2.",
-      "My current research focuses on refurbishing a small gas turbine model to investigate how biodiesel blends affect output power and overall performance, strengthening my interest in gas turbine engines, combustion, alternative aviation fuels, and experimental propulsion research.",
-      "Together, these projects have provided a strong foundation in CFD, FEA, CAD, MATLAB, analytical modelling, data analysis, and experimental testing.",
-      "Industrial training at SriLankan Airlines connected this academic experience with practical aircraft engineering through exposure to the engine module, NDT, structures, paint and composites, and wheels-and-brakes workshops.",
-      "Looking ahead, I aim to build on this foundation through research in high-speed and hypersonic aerodynamics, aeroelasticity, propulsion and combustion systems, and flight dynamics and control, with a particular focus on combining computational and experimental methods to analyse and optimise advanced aerospace systems.",
-      "I am currently seeking MSc or PhD opportunities where I can develop this expertise at a deeper and more specialised level.",
+      "I am a final-year Mechanical Engineering undergraduate at the University of Moratuwa, one of Sri Lanka’s leading engineering universities, specialising in Aeronautical Engineering. My interests lie in flight dynamics, aerospace propulsion, computational aerodynamics, and experimental aerospace engineering.",
+      "My primary research is my final-year project on fixed-wing UAV flight dynamics, which combines aerodynamic modelling, dynamic stability analysis, simulation, and flight-test data to evaluate and fine-tune UAV behaviour. As part of the research framework developed through this project, I designed, fabricated, instrumented, and flight-tested a complete fixed-wing UAV, enabling simulation results to be validated against actual flight performance.",
+      "My other major projects include propeller design and performance analysis using Blade Element Theory, the analytical structural design of a sailplane wing, and the FEA modelling and experimental validation of an aircraft wing structure using a dedicated test apparatus. I also served as an aerodynamics engineer for Sri Lanka’s first Formula Student car project, leading the aerodynamic package development for the team’s second vehicle, E2.",
+      "My current research focuses on refurbishing a small gas turbine model to investigate how biodiesel blends affect its output power and overall performance. This work is strengthening my interest in gas turbine engines, combustion, alternative aviation fuels, and experimental propulsion research.",
+      "Together, these projects have provided me with a strong foundation in CFD, FEA, CAD, MATLAB, analytical modelling, data analysis, and experimental testing. My industrial training at SriLankan Airlines further connected this academic experience with practical aircraft engineering through exposure to the Engine Module, NDT, Structures, Paint and Composite, and Wheels and Brakes Workshops.",
+      "Looking ahead, I aim to build on this foundation through research in high-speed and hypersonic aerodynamics, aeroelasticity, propulsion and combustion systems, and flight dynamics and control. I am particularly interested in combining computational and experimental methods to analyse and optimise advanced aerospace systems. I am currently seeking research assistant, MSc, or PhD opportunities where I can develop this expertise at a deeper and more specialised level.",
     ],
     stats: [
-      { value: "3.7", label: "GPA (Sample)" },
-      { value: "12+", label: "Projects Completed" },
-      { value: "4", label: "Internships & Placements" },
-      { value: "6", label: "Tools & Software" },
+      { value: "3.77", label: "Current CGPA" },
+      { value: "6+", label: "Major Aerospace Projects" },
+      { value: "6 Months", label: "Aircraft Engineering Training" },
+      { value: "4", label: "Dean’s List Semesters" },
     ],
   },
 
@@ -84,36 +79,34 @@ const PORTFOLIO_DATA = {
   education: [
     {
       level: "University",
-      institution: "University of Moratuwa",
-      program: "BSc (Hons) Mechanical Engineering",
-      period: "2020 — 2024 (Sample Dates)",
-      classification: "Second Class Upper Division (Sample Result)",
+      institution: "University of Moratuwa, Sri Lanka",
+      program: "BSc (Hons) Mechanical Engineering — Aeronautical Engineering Specialisation",
+      period: "2022 — 2026",
+      classification: "First Class Division | CGPA: 3.77/4.00",
       highlights: [
-        "Specialised coursework in Thermofluids, Manufacturing Systems, and Mechanical Design.",
-        "Final year research project on optimising heat-exchanger performance using CFD (sample project).",
-        "Active member of the Mechanical Engineering Students' Society (sample involvement).",
+        "Dean’s List recognition in Semesters 2, 4, 6, and 7.",
+        "Final-year research focused on parametric sensitivity analysis and fine-tuning of fixed-wing UAV flight dynamics.",
+        "Academic and project experience in CFD, FEA, CAD, MATLAB, flight testing, structural analysis, and propulsion systems.",
       ],
     },
     {
       level: "Advanced Level",
-      institution: "Sample Central College, Colombo",
+      institution: "Bandaranayake College, Gampaha",
       program: "G.C.E. Advanced Level — Physical Science Stream",
-      period: "2017 — 2019 (Sample Dates)",
-      classification: "3A's (Sample Result)",
+      period: "2018 — 2020",
+      classification: "2 A’s and 1 B | Z-score: 2.1187 | Island Rank: 684",
       highlights: [
-        "Subjects: Combined Mathematics, Physics, Chemistry.",
-        "Ranked among top performers in the school (sample achievement).",
+        "Subjects: Combined Mathematics, Physics, and Chemistry.",
       ],
     },
     {
       level: "Ordinary Level",
-      institution: "Sample Central College, Colombo",
+      institution: "Bandaranayake College, Gampaha",
       program: "G.C.E. Ordinary Level",
-      period: "2012 — 2016 (Sample Dates)",
-      classification: "9A's (Sample Result)",
+      period: "2016 — 2017",
+      classification: "9 A’s",
       highlights: [
-        "Consistent top-of-class academic performance (sample achievement).",
-        "Represented school in inter-school science quiz competitions (sample activity).",
+        "Completed the G.C.E. Ordinary Level examination with nine A grades.",
       ],
     },
   ],
@@ -151,58 +144,220 @@ const PORTFOLIO_DATA = {
   // Work / research / volunteer experience — timeline style.
   experience: [
     {
-      type: "Internship",
-      position: "Mechanical Design Intern",
-      organisation: "Sample Engineering Works (Pvt) Ltd",
-      period: "Jun 2023 — Aug 2023 (Sample)",
+      id: "temporary-instructor",
+      type: "Academic Experience",
+      position: "Temporary Instructor",
+      organisation: "Department of Mechanical Engineering, University of Moratuwa",
+      period: "July 2026 — Present",
+      summary: [
+        "I currently work full-time as a Temporary Instructor in the Department of Mechanical Engineering at the University of Moratuwa, supporting undergraduate teaching, practical sessions, tutorials, laboratory activities, student assessments, and technical guidance across core mechanical engineering subjects.",
+        "I am assigned to ME2024 – Manufacturing Processes, ME1823 – Basic Engineering Thermodynamics, ME2093 – Mechanics of Machines I, and ME4220 – Principles of Naval Architecture.",
+        "This experience has strengthened my technical knowledge, communication, teaching, and problem-solving skills while allowing me to guide students in applying theoretical engineering concepts to practical problems.",
+      ],
       responsibilities: [
-        "Assisted in designing jigs and fixtures for a production line using SolidWorks.",
-        "Prepared technical drawings and BOMs for manufacturing hand-off.",
-        "Supported tolerance-stack analysis for an assembly redesign.",
+        "Support undergraduate teaching, practical sessions, tutorials, laboratory activities, student assessments, and technical guidance.",
+        "Assigned modules: ME2024 Manufacturing Processes, ME1823 Basic Engineering Thermodynamics, ME2093 Mechanics of Machines I, and ME4220 Principles of Naval Architecture.",
+        "Guide students in applying theoretical engineering concepts to practical problems.",
       ],
       achievements: [
-        "Reduced fixture assembly time by 15% through a simplified locating scheme (sample metric).",
+        "Strengthened my technical communication, teaching, organisation, and engineering problem-solving skills.",
       ],
     },
     {
-      type: "Research Assistant",
-      position: "Research Assistant — Thermofluids Lab",
-      organisation: "University of Moratuwa, Dept. of Mechanical Engineering",
-      period: "Jan 2023 — May 2023 (Sample)",
-      responsibilities: [
-        "Ran CFD simulations investigating airflow over finned heat sinks.",
-        "Documented simulation methodology and validated results against experimental data.",
-        "Assisted in preparing a conference-style research poster (sample activity).",
-      ],
-      achievements: [
-        "Co-authored a sample technical report presented at a departmental symposium.",
-      ],
-    },
-    {
+      id: "srilankan-airlines",
       type: "Industrial Training",
-      position: "Industrial Trainee",
-      organisation: "Sample Manufacturing PLC",
-      period: "Jul 2022 — Dec 2022 (Sample)",
-      responsibilities: [
-        "Rotated across production, quality assurance, and maintenance departments.",
-        "Observed and documented preventive maintenance schedules for CNC machinery.",
-        "Proposed a minor layout change to reduce material handling distance.",
+      position: "Trainee Aeronautical Engineer",
+      organisation: "SriLankan Airlines Engineering",
+      period: "December 2024 — May 2025",
+      summary: [
+        "Completed a six-month industrial training placement at SriLankan Airlines Engineering, gaining practical knowledge across seven specialised workshops, including the Engine Module, NDT, and Paint and Composite Workshops, as well as base-maintenance and battery facilities supporting Airbus A320-family and A330 aircraft.",
+        "The training strengthened my understanding of aircraft systems, inspection methods, technical documentation, quality control, and aviation safety procedures, while developing my attention to detail, experimental discipline, teamwork, and practical engineering awareness.",
       ],
-      achievements: [
-        "Layout proposal adopted for a pilot production cell (sample outcome).",
+      responsibilities: [
+        "Completed six months of industrial training across seven specialised workshops, base-maintenance hangars, and aircraft battery facilities supporting Airbus A320-family and A330 aircraft.",
+        "Gained practical knowledge of aircraft systems, inspection methods, technical documentation, quality control, and aviation safety procedures.",
+      ],
+      details: [
+        {
+          title: "Training Overview",
+          paragraphs: [
+            "Completed a six-month industrial training placement at SriLankan Airlines Engineering, gaining practical exposure to aircraft maintenance, component overhaul, inspection, repair, engineering documentation, and aviation safety. The training covered line and base maintenance operations, specialised component workshops, and maintenance practices used for Airbus A320-family and A330 aircraft.",
+          ],
+        },
+        {
+          title: "Wheels and Brakes Workshop",
+          bullets: [
+            "Participated in the disassembly and assembly of aircraft wheel units from main and nose landing-gear systems.",
+            "Recorded wheel-hub part numbers, serial numbers, tyre conditions, and visible defects before maintenance.",
+            "Assisted with tyre deflation, bearing and circlip removal, bead separation, wheel-hub dismantling, component cleaning, lubrication, and reassembly.",
+            "Applied high-temperature bearing grease and graphite-based lubricant to wheel bolts, washers, and threaded areas.",
+            "Gained experience with torque-controlled assembly procedures and nitrogen inflation of aircraft tyres.",
+            "Studied thermal plugs, overpressure relief valves, tyre-pressure sensors, wire-locking mechanisms, and self-locking wheel-hub nuts.",
+            "Examined carbon brake assemblies, including rotors, stators, hydraulic pistons, and independent hydraulic systems providing braking redundancy.",
+          ],
+        },
+        {
+          title: "Safety Workshop",
+          bullets: [
+            "Assisted with the inspection and maintenance of cabin safety equipment, including slide rafts, life jackets, seat belts, fire extinguishers, and emergency equipment.",
+            "Observed the rapid inflation and leakage inspection of an Airbus aircraft slide raft.",
+            "Supported the folding, air removal, compression, vacuum packing, and repacking of slide-raft assemblies and their gas cylinders.",
+            "Inspected, folded, labelled, and vacuum-packed inflatable safety jackets according to workshop procedures.",
+            "Assisted with cleaning and inspecting aircraft seat belts before their return to service.",
+            "Developed an understanding of inspection intervals, traceability requirements, serial-number recording, and expiry-date documentation used for safety equipment.",
+          ],
+        },
+        {
+          title: "Engine Module Workshop",
+          bullets: [
+            "Gained exposure to CFM56, LEAP, V2500, and Rolls-Royce Trent 700 gas turbine engines used within the SriLankan Airlines fleet.",
+            "Studied two-spool and three-spool turbofan engine operation, including compressor stages, combustors, turbines, bypass flow, and shaft arrangements.",
+            "Learned how aircraft engines are started using pneumatic power supplied by the auxiliary power unit, another operating engine, or ground equipment.",
+            "Observed a complete Rolls-Royce Trent 700 fan-blade replacement on an Airbus A330 engine.",
+            "Observed engine and APU borescope inspections used to identify cracks, corrosion, wear, and foreign-object damage.",
+            "Became familiar with the Aircraft Maintenance Manual, particularly ATA Chapter 72 relating to engine maintenance.",
+            "Studied engine fuel and oil-system components, including low- and high-pressure fuel pumps, the fuel-cooled oil cooler, air–oil heat exchanger, fuel-metering unit, and electronic engine controller.",
+            "Developed an understanding of active clearance-control systems, compressor bleed systems, stall and surge prevention, and accessory gearbox operation.",
+          ],
+        },
+        {
+          title: "Paint and Composite Workshop",
+          bullets: [
+            "Observed carbon- and glass-fibre component repairs using vacuum-bagging and wet-layup methods.",
+            "Studied the functions of peel ply, perforated release film, bleeder fabric, separator film, breather layers, heat blankets, and vacuum systems.",
+            "Observed the repair of an aircraft belly panel using a carbon-fibre repair patch and controlled curing procedures.",
+            "Assisted with surface preparation, sanding, painting, resin application, corrosion protection, and the repair of non-structural cabin components.",
+            "Gained exposure to plastic-welding methods used to repair damaged cabin and lavatory components.",
+            "Supported modification work for the installation of a cabin Wi-Fi module and the replacement of a cockpit USB connection with a USB Type-C port.",
+            "Observed the preparation and repainting of flap-track fairings and the repair of emergency-slide casings.",
+          ],
+        },
+        {
+          title: "Structural Workshop",
+          bullets: [
+            "Gained exposure to structural inspection, damage assessment, component fabrication, and repair of aircraft ribs, spars, stringers, skin panels, brackets, and control surfaces.",
+            "Observed the permanent repair of an Airbus A321 nose-section dent caused by a bird strike.",
+            "Followed the repair process from visual inspection and Structural Repair Manual consultation to damaged-material removal, doubler fabrication, riveting, corrosion protection, and repainting.",
+            "Learned how rivet pitch, edge distance, rivet size, and repair geometry are determined using approved structural-repair documentation.",
+            "Observed the replacement of an engine C-duct fairing bracket and the repair of an aircraft slat.",
+            "Gained familiarity with sheet-metal rolling, drilling, bending, hydraulic pressing, welding, riveting, and structural-forming equipment.",
+            "Studied aircraft fasteners including solid-shank, blind, tubular, CherryMAX, and CherryLOCK rivets.",
+            "Received exposure to cockpit flight controls, flight displays, flight computers, and electronic equipment located below the cockpit deck.",
+          ],
+        },
+        {
+          title: "Non-Destructive Testing Workshop",
+          bullets: [
+            "Developed practical knowledge of liquid penetrant testing, eddy-current testing, and magnetic-particle inspection.",
+            "Observed the inspection of aircraft wheel hubs, wheel bolts, engine-mounting bolts, torque bars, turbine blades, landing-gear parts, and structural components.",
+            "Learned the surface preparation, penetrant application, dwell time, cleaning, drying, developer application, ultraviolet inspection, and post-cleaning stages of fluorescent liquid penetrant testing.",
+            "Observed eddy-current inspections used to detect surface and near-surface defects in conductive materials.",
+            "Became familiar with rotating probes used to inspect wheel-hub bolt holes and rotating platforms used for wheel-hub examination.",
+            "Studied magnetic flux leakage and magnetic particles used to identify discontinuities in ferromagnetic components.",
+            "Gained an understanding of how NDT results are interpreted and documented before components are approved for further maintenance or service.",
+          ],
+        },
+        {
+          title: "Accessories Workshop",
+          bullets: [
+            "Assisted with the cleaning and servicing of aircraft environmental-control-system heat exchangers.",
+            "Gained exposure to alkaline cleaning, high-pressure washing, steam cleaning, compressed-air drying, surface cleaning, and oven drying.",
+            "Assisted with the calibration of a rudder actuator using a hydraulic test rig and compared measured displacement values with manufacturer specifications.",
+            "Participated in the disassembly, cleaning, O-ring replacement, reassembly, and preparation of cargo-bay roller assemblies.",
+            "Gained an understanding of the repair, calibration, and overhaul of line-replaceable units, hydraulic components, lavatory equipment, and cargo-handling devices.",
+          ],
+        },
+        {
+          title: "Base Maintenance and Hangar Operations",
+          bullets: [
+            "Observed scheduled aircraft maintenance activities inside narrow-body and wide-body hangars.",
+            "Gained exposure to A-check and C-check procedures, aircraft jacking, engine inspections, borescope inspections, aircraft washing, paint removal, structural work, and cabin maintenance.",
+            "Observed an ongoing 2C-check maintenance programme on an Airbus A330 aircraft.",
+            "Learned how engineering teams, workshops, planners, technicians, and inspectors coordinate during heavy-maintenance activities.",
+            "Developed an understanding of hangar access control, work-area safety, component traceability, approved documentation, and certification requirements.",
+          ],
+        },
+        {
+          title: "Aircraft Battery Maintenance",
+          bullets: [
+            "Gained exposure to the maintenance of aircraft Nickel–Cadmium batteries used for APU starting and emergency electrical power.",
+            "Studied battery inspection, condition recording, charging, controlled discharging, capacity testing, electrolyte servicing, terminal inspection, and cell replacement.",
+            "Learned about battery construction, charging procedures, workshop safety, and the importance of following the Component Maintenance Manual.",
+          ],
+        },
+        {
+          title: "Engineering Operations and Professional Development",
+          bullets: [
+            "Developed an understanding of line maintenance, base maintenance, Approved Maintenance Organisation operations, and Continuing Airworthiness Management Organisation responsibilities.",
+            "Followed aviation safety practices involving personal protective equipment, restricted-area access, chemical handling, compressed gases, equipment operation, and waste disposal.",
+            "Gained experience working with Aircraft Maintenance Manuals, Structural Repair Manuals, Component Maintenance Manuals, part numbers, serial numbers, and maintenance records.",
+            "Strengthened communication, teamwork, adaptability, time management, attention to detail, and professional discipline through interaction with engineers, technicians, supervisors, and maintenance planners.",
+          ],
+        },
       ],
     },
     {
-      type: "Volunteer Experience",
-      position: "Volunteer Mentor — STEM Outreach",
-      organisation: "Sample STEM for Schools Initiative",
-      period: "2021 — 2022 (Sample)",
+      id: "falcon-e-racing",
+      type: "Engineering Team",
+      position: "Aerodynamics Engineer",
+      organisation: "Falcon E Racing | Sri Lanka’s First Formula Student Car Project",
+      period: "University Project",
+      summary: [
+        "Served as an Aerodynamics Engineer for Falcon E Racing, Sri Lanka’s first Formula Student car project, leading the aerodynamic package development for the team’s second vehicle, E2. My work covered CFD-based aerodynamic optimisation, composite manufacturing, wing construction, assembly, and vehicle integration.",
+      ],
       responsibilities: [
-        "Mentored school students in a beginner robotics and CAD workshop series.",
-        "Helped design simple 3D-printed mechanism demos for outreach events.",
+        "Led the aerodynamic package development for E2, the second vehicle developed by Sri Lanka’s first Formula Student car project.",
+        "Covered CFD-based optimisation, composite manufacturing, front and rear wing construction, assembly, and vehicle integration.",
+      ],
+      details: [
+        {
+          title: "Aerodynamic Development",
+          paragraphs: [
+            "Served as an Aerodynamics Engineer for Falcon E Racing, Sri Lanka’s first Formula Student car project, and led the aerodynamic package development for the team’s second vehicle, E2. My role covered the complete development cycle, from aerodynamic concept generation and CFD-based optimisation to composite manufacturing, assembly, and vehicle integration.",
+            "A major part of my work involved leading the aerodynamic design and optimisation of a four-element front wing using two-dimensional steady-state CFD simulations in ANSYS Fluent. The computational domain incorporated the front section of the tyre with a rotating-wall boundary condition to represent the interaction between the front-wing wake and tyre flow field more accurately.",
+            "I applied Multi-Objective Genetic Algorithm optimisation to investigate the influence of key design variables, including angle of attack, ground clearance, element gaps, and overlaps. The optimisation aimed to maximise downforce and aerodynamic efficiency while directing airflow over and around the front tyre to reduce wake formation and tyre-induced drag. The simulation results supported data-driven decisions throughout the front-wing development process.",
+            "I also led the design and development of the wider aerodynamic package, including the front wing, rear wing, aerodynamic body elements, and their integration with the vehicle. The designs were evaluated by considering downforce generation, drag, aerodynamic balance, structural feasibility, manufacturing limitations, ground clearance, and Formula Student regulations.",
+          ],
+        },
+        {
+          title: "Manufacturing, Construction, and Assembly",
+          paragraphs: [
+            "My responsibilities extended beyond simulation and design. I led the manufacturing and assembly activities, including:",
+          ],
+          bullets: [
+            "Fabrication and preparation of fibreglass moulds.",
+            "Mould surface preparation and application of release systems.",
+            "Carbon-fibre layup and composite component fabrication.",
+            "Production of 3D-printed aerofoil ribs.",
+            "Construction of the front and rear wing elements.",
+            "Alignment and assembly of multi-element wing sections.",
+            "Installation and integration of the completed aerodynamic package with the vehicle.",
+          ],
+        },
+        {
+          title: "Skills Developed",
+          paragraphs: [
+            "This experience gave me responsibility for the complete aerodynamic development cycle: conceptual design, CAD modelling, CFD simulation, numerical optimisation, composite manufacturing, assembly, and vehicle integration. It strengthened my expertise in computational aerodynamics, ANSYS Fluent, CAD, composite fabrication, design optimisation, technical leadership, teamwork, and multidisciplinary engineering decision-making.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "aeronautical-society",
+      type: "Student Society",
+      position: "Senior Member of the Aeronautical Society",
+      organisation: "Bandaranayake College, Gampaha",
+      period: "2017 — 2020",
+      summary: [
+        "Served as a Senior Member of the Aeronautical Society at Bandaranayake College from 2017 to 2020, gaining foundational experience in RC aircraft flying, basic aerodynamics, flight controls, and electronics. During this period, I independently built an F450 quadcopter using a DJI NAZA-M Lite flight controller and fabricated RC aircraft models, including an F-22 Raptor and Blu Baby.",
+      ],
+      responsibilities: [
+        "Learned the fundamentals of RC aircraft flying, basic aerodynamics, flight controls, and electronics.",
+        "Independently built an F450 quadcopter using a DJI NAZA-M Lite flight controller.",
+        "Fabricated RC aircraft models including an F-22 Raptor and Blu Baby.",
       ],
       achievements: [
-        "Workshop series reached 5 schools and ~150 students (sample metric).",
+        "These early hands-on projects played an important role in developing my interest in aeronautical engineering and practical aircraft systems.",
       ],
     },
   ],

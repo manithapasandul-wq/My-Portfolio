@@ -165,6 +165,8 @@ const PORTFOLIO_DATA = {
     },
     {
       id: "srilankan-airlines",
+      detailPage: "srilankan-airlines.html",
+      detailPageLabel: "View Full Experience",
       type: "Industrial Training",
       position: "Trainee Aeronautical Engineer",
       organisation: "SriLankan Airlines Engineering",
@@ -298,6 +300,8 @@ const PORTFOLIO_DATA = {
     },
     {
       id: "falcon-e-racing",
+      detailPage: "falcon-e-racing.html",
+      detailPageLabel: "View Full Experience",
       type: "Engineering Team",
       position: "Aerodynamics Engineer",
       organisation: "Falcon E Racing | Sri Lanka’s First Formula Student Car Project",

@@ -424,6 +424,150 @@ h1, h2, h3, h4 {
 
 .education-block { margin-top: 20px; }
 
+/* ---------- Experience summaries and expandable details ---------- */
+.experience-card { overflow: hidden; }
+
+.experience-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.experience-summary p {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.experience-see-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 9px 15px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.experience-see-more-btn:hover {
+  transform: translateY(-2px);
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.experience-see-more-btn:focus-visible {
+  outline: 3px solid var(--primary-soft);
+  outline-offset: 3px;
+}
+
+.experience-see-more-btn .icon {
+  width: 1em;
+  height: 1em;
+  transition: transform 0.3s ease;
+}
+
+.experience-see-more-btn[aria-expanded="true"] .icon {
+  transform: rotate(90deg);
+}
+
+.experience-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.45s cubic-bezier(.16,.84,.44,1),
+    opacity 0.3s ease;
+}
+
+.experience-details.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.experience-details-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.experience-details-content {
+  margin-top: 22px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.experience-detail-section {
+  margin-bottom: 28px;
+}
+
+.experience-detail-section:last-child {
+  margin-bottom: 4px;
+}
+
+.experience-detail-section h5 {
+  margin-bottom: 11px;
+  color: var(--primary);
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+
+.experience-detail-section p {
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.experience-detail-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.experience-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.experience-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+.experience-detail-list .icon {
+  width: 1em;
+  height: 1em;
+  margin-top: 5px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .experience-see-more-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experience-details-content {
+    margin-top: 18px;
+    padding-top: 20px;
+  }
+}
+
 /* ==========================================================================
    SKILLS
    ========================================================================== */

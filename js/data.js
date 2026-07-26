@@ -40,16 +40,16 @@ const PORTFOLIO_DATA = {
   // REPLACE-ME: swap intro copy, image, and links with the real profile.
   profile: {
     name: "Manitha Pasandul",
-    title: "Mechanical Engineering Graduate",
+    title: "Mechanical Engineering Graduate | University of Moratuwa",
     tagline:
-      "Turning ideas into functioning machines — I design, simulate, and build mechanical systems with a focus on efficiency, sustainability, and clean engineering.",
+      "Recent BSc (Hons) Mechanical Engineering graduate with hands-on experience in CAD design, CFD simulation, and manufacturing process development.",
     intro:
-      "I'm a recent BSc (Hons) Mechanical Engineering graduate from the University of Moratuwa, passionate about product design, fluid dynamics, and manufacturing systems. My work blends CAD modelling, simulation, and hands-on prototyping to solve real-world engineering problems. This portfolio showcases sample coursework, mock internships, and demonstration projects.",
-    location: "Colombo, Sri Lanka (Sample Location)",
-    email: "manitha.pasandul@example.com", // REPLACE-ME: real email
-    phone: "+94 77 000 0000", // REPLACE-ME: real phone
-    cvUrl: "assets/cv/Manitha_Pasandul_Sample_CV.pdf", // REPLACE-ME: real CV file
-    profileImage: "assets/images/profile-placeholder.svg", // REPLACE-ME: real headshot
+      "Recent BSc (Hons) Mechanical Engineering graduate with hands-on experience in CAD design, CFD simulation, and manufacturing process development. This sample CV is generated for portfolio demonstration purposes.",
+    location: "Colombo, Sri Lanka (Sample)",
+    email: "manitha.pasandul@example.com",
+    phone: "+94 77 000 0000",
+    cvUrl: "assets/cv/Manitha_Pasandul_Sample_CV.pdf",
+    profileImage: "assets/images/profile-placeholder.svg",
     socials: {
       linkedin: "https://linkedin.com/in/example-profile", // REPLACE-ME
       github: "https://github.com/example-profile", // REPLACE-ME
@@ -60,9 +60,17 @@ const PORTFOLIO_DATA = {
 
   about: {
     paragraphs: [
-      "I'm a detail-driven mechanical engineer who enjoys the full journey from a rough sketch to a validated, manufacturable design. During my time at the University of Moratuwa, I worked across CAD modelling, thermofluid analysis, and manufacturing process design — always looking for the balance between performance, cost, and sustainability.",
-      "I care about engineering that matters: efficient energy systems, smarter manufacturing, and products that are designed to last. Outside of formal coursework, I like tearing down old mechanical assemblies just to understand how they were designed, and rebuilding small robotics projects over the weekend.",
-      "I'm currently exploring opportunities in design engineering, product development, and simulation-focused roles where I can keep learning by building.",
+      "I am a final-year Mechanical Engineering undergraduate at the University of Moratuwa, one of Sri Lanka’s leading engineering universities, specializing in Aeronautical Engineering.",
+      "My interests lie in flight dynamics, aerospace propulsion, computational aerodynamics, and experimental aerospace engineering.",
+      "My primary research is my final-year project on fixed-wing UAV flight dynamics, which combines aerodynamic modelling, dynamic stability analysis, simulation, and flight-test data to evaluate and fine-tune UAV behaviour.",
+      "As part of this research framework, I designed, fabricated, instrumented, and flight-tested a complete fixed-wing UAV, enabling simulation results to be validated against actual flight performance.",
+      "Other major projects include propeller design and performance analysis using Blade Element Theory, analytical structural design of a sailplane wing, and FEA modelling and experimental validation of an aircraft wing structure using a dedicated test apparatus.",
+      "I also served as an aerodynamics engineer for Sri Lanka’s first Formula Student car project, leading the aerodynamic package development for the team’s second vehicle, E2.",
+      "My current research focuses on refurbishing a small gas turbine model to investigate how biodiesel blends affect output power and overall performance, strengthening my interest in gas turbine engines, combustion, alternative aviation fuels, and experimental propulsion research.",
+      "Together, these projects have provided a strong foundation in CFD, FEA, CAD, MATLAB, analytical modelling, data analysis, and experimental testing.",
+      "Industrial training at SriLankan Airlines connected this academic experience with practical aircraft engineering through exposure to the engine module, NDT, structures, paint and composites, and wheels-and-brakes workshops.",
+      "Looking ahead, I aim to build on this foundation through research in high-speed and hypersonic aerodynamics, aeroelasticity, propulsion and combustion systems, and flight dynamics and control, with a particular focus on combining computational and experimental methods to analyse and optimise advanced aerospace systems.",
+      "I am currently seeking MSc or PhD opportunities where I can develop this expertise at a deeper and more specialised level.",
     ],
     stats: [
       { value: "3.7", label: "GPA (Sample)" },
@@ -115,11 +123,11 @@ const PORTFOLIO_DATA = {
     {
       category: "CAD & Design",
       items: [
-        { name: "CAD Design", level: 90 },
         { name: "SolidWorks", level: 92 },
         { name: "AutoCAD", level: 85 },
         { name: "Technical Drawing", level: 88 },
         { name: "Mechanical Design", level: 87 },
+        { name: "Manufacturing", level: 76 },
       ],
     },
     {
@@ -127,7 +135,7 @@ const PORTFOLIO_DATA = {
       items: [
         { name: "ANSYS", level: 80 },
         { name: "CFD", level: 78 },
-        { name: "Finite Element Analysis", level: 82 },
+        { name: "FEA", level: 82 },
         { name: "MATLAB", level: 75 },
       ],
     },
@@ -135,7 +143,6 @@ const PORTFOLIO_DATA = {
       category: "Programming & Management",
       items: [
         { name: "Python", level: 70 },
-        { name: "Manufacturing", level: 76 },
         { name: "Project Management", level: 72 },
       ],
     },

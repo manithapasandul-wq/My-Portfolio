@@ -128,6 +128,14 @@
     bars.forEach((bar) => observer.observe(bar));
   }
 
+  function formatSkillProficiency(level) {
+    if (typeof level !== "number") return "";
+    if (level >= 90) return "Expert";
+    if (level >= 75) return "Advanced";
+    if (level >= 60) return "Intermediate";
+    return "Familiar";
+  }
+
   /* ------------------------------------------------------------------ *
    * BACK TO TOP
    * ------------------------------------------------------------------ */
@@ -142,6 +150,8 @@
    * ------------------------------------------------------------------ */
   function renderHero() {
     const { profile } = PORTFOLIO_DATA;
+    $("#hero-name").textContent = profile.name;
+    $("#hero-title").textContent = profile.title;
     $("#hero-tagline").textContent = profile.tagline;
     $("#hero-photo").src = profile.profileImage;
     $("#hero-photo").alt = `Placeholder profile photo of ${profile.name}`;
@@ -235,7 +245,7 @@
           .map(
             (skill) => `
           <div class="skill-row">
-            <div class="skill-row-head"><span>${skill.name}</span><span>${skill.level}%</span></div>
+            <div class="skill-row-head"><span>${skill.name}</span><span>${formatSkillProficiency(skill.level)}</span></div>
             <div class="skill-bar"><div class="skill-bar-fill" data-level="${skill.level}"></div></div>
           </div>`
           )
